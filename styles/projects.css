@@ -1,0 +1,41 @@
+#projects {
+    padding-block: 72px 144px;
+}
+.content-project {
+    display: grid;    
+    grid-template-columns: repeat(3, 330px);    
+    gap: 24px;     
+    place-content: center;
+}
+.projects-subt {
+    text-align: center;    
+    padding-bottom: 56px;
+    p {
+        font: var(--subtitle);
+        color: var(--red);
+    }
+    h2 {
+        font: var(--title-md);
+    }
+}
+.card {    
+    padding: 12px 12px 17px;
+    background-color: var(--gray-400);    
+    border-radius: 12px;        
+    border: 1px solid transparent;
+    img {
+        width: 306px;
+        border-radius: 8px;        
+    }
+    figcaption {
+        margin-top: 20px;
+        h3 {
+            margin-bottom: 8px;
+            font: var(--title-sm);
+            color: var(--gray-100);
+        }
+    }
+    &:hover {
+        border: 1px solid var(--gray-300);
+    }
+}
